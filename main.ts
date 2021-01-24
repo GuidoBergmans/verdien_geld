@@ -1,9 +1,15 @@
+function wereld () {
+    tiles.setTilemap(tilemap`level3`)
+}
 scene.onOverlapTile(SpriteKind.Player, assets.tile`tile37`, function (sprite, location) {
     fabriek()
 })
 function fabriek () {
     tiles.setTilemap(tilemap`level4`)
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tile41`, function (sprite, location) {
+    wereld()
+})
 let mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
