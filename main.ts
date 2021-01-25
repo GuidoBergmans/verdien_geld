@@ -12,7 +12,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`tile43`, function (sprite, lo
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`tile41`, function (sprite, location) {
     wereld()
-    pause(5000)
 })
 let mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
