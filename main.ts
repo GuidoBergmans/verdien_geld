@@ -1,6 +1,10 @@
 function wereld () {
     tiles.setTilemap(tilemap`level3`)
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tile31`, function (sprite, location) {
+    info.changeScoreBy(-1)
+    tiles.setTileAt(location, assets.tile`tile44`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`tile37`, function (sprite, location) {
     fabriek()
 })
