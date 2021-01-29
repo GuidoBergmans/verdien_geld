@@ -48,5 +48,6 @@ forever(function () {
     controller.moveSprite(mySprite)
 })
 forever(function () {
-	
+    music.setVolume(30)
+    music.playMelody("G B A G C5 B A B ", 120)
 })
