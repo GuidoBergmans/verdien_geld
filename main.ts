@@ -17,6 +17,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`tile32`, function (sprite, lo
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`tile43`, function (sprite, location) {
     info.changeScoreBy(10)
+    music.baDing.play()
     tiles.setTileAt(location, assets.tile`tile`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`tile41`, function (sprite, location) {
@@ -45,4 +46,7 @@ scene.cameraFollowSprite(mySprite)
 tiles.setTilemap(tilemap`level3`)
 forever(function () {
     controller.moveSprite(mySprite)
+})
+forever(function () {
+	
 })
